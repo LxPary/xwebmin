@@ -1,0 +1,74 @@
+#top-menu { height:100% }
+#start-bar{
+ /*width:160px;*/
+ height:100%;
+}    
+#menu-pane{ height:100%;position:absolute;top:0px;right:60px; }
+.sys-menu { }
+.sys-menu ul { padding:0; margin:0; list-style-type: none; }
+.sys-menu ul li { float:left; position:relative; }
+.sys-menu ul li a { display:block; text-decoration:none; width:60px }
+.sys-menu ul li a span { padding-left:15px; }
+.sys-menu ul li ul { display: none; }
+.sys-menu ul li:hover ul { display:block; position:absolute; left:0px;width:60px }
+.sys-menu ul li:hover ul li {  }
+.sys-menu ul li:hover ul li ul { display:none; }
+.sys-menu ul li ul li:hover ul { display:block; position:absolute; left:100px; top:0 }
+
+/*lock screen*/
+.locked{ width:100%; background:#CCCCCC; position:absolute; left:0;right:0; top:0; bottom:0; -moz-opacity:0.5;filter:alpha(opacity=50);z-index:99; height:100%; }
+
+/**FORM ITEMS STYLES**/
+.form-boxes { clear:both;height:85%;border-top:1px solid #acacac;border-left:1px solid #acacac;border-bottom:1px solid #acacac;border-right:1px solid #acacac;padding:4px;z-index:-1 }
+.form-single-box { height:85% }
+
+.form-logo { width:100%;text-align:center;padding-bottom:20px }
+.form-logo img { padding-bottom:10px }
+
+.form-fieldset { padding:2px;border:1px solid #bcbcbc;vertical-align:text-top }
+
+.form-table { width: 100%;border:1px solid #bcbcbc;font-size:12px;}
+.form-table tr th { font-weight:normal;text-align:left;background:#f6f6f6 }
+.form-table tr td {}
+.form-table tr.odd td { background:#f8f8f8 }
+
+.form-list { width:100%;text-align:center }
+.sys-list-select { width:100% }
+select.form-list option { width:100% }
+legend { font-size:12px }
+
+div.form-list-control { clear:both;width:100% }
+div.form-list-folder { width:50% }
+div.form-list-folder a { text-decoration:none }
+div.form-newbutton { width:100%;text-align:right }
+div.form-list-newitem a { text-decoration:none }
+
+div.form-list table { width:100% }
+div.form-list table tr th { font-size:13px;font-weight:normal;text-align:left }
+div.form-list table tr td { font-size:13px;font-weight:normal }
+div.form-list table tr td  a { text-decoration:none }
+
+.form-item { clear:both;min-height:23px;width:100%;position:relative;float:left;padding-top:2px }
+.form-item div { position:relative;float:left }
+.form-item label span,.form-item-title label span { color:black;font-size:13px }
+.form-item-title { width:22%;text-align:right;padding-right:10px }
+.form-item-content {}
+.form-input,.sys-list-select { border:1px solid #b5bbc8 }
+.form-input-focus { border:1px solid #99bbe8 }
+.form-content { clear:both;border:1px red solid }
+
+.form-comment { text-decoration:underline }
+
+
+form h2 { clear:both }
+
+.form-button { clear:both;width:100%;padding-top:30px;text-align:center }
+.form-button input { padding:5px;height:30px }
+.form-navs { width:100%;clear:both;padding-top:5px;font-size:12px;background:#f6f6f6;margin-bottom:-1px }
+.form-navs div { position:relative;float:left;border-bottom:1px solid #acacac;border-top:1px solid #acacac;border-right:1px solid #acacac;border-left:1px solid #acacac;padding:3px;color:black;margin-right:-1px;background:#f6f6f6;margin-bottom:-2px }
+.form-navs div.selected { background:#ffffff;border-bottom:1px solid white;border-top:2px #799fd4 solid;cursor:default }
+.form-navs div a { text-decoration:none;color:black }
+.form-navs div.selected a {}
+.form-tip { font-size:12px }
+
+#toolTip { z-index:10000;width:200px;background:#ffffff;border:1px solid #799fd4;padding:3px }
