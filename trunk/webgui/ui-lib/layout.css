@@ -1,0 +1,44 @@
+/* Layout Stylesheet */ 
+
+body{
+ padding:0px;
+ margin:0px;
+ height:100%;
+ width:100%;
+ /*behavior:url(/ui-lib/csshover.htc);*/
+ overflow:hidden;
+ } 
+#lh-col{
+ position:absolute;
+ top:0px;
+ left:0px;
+ width:180px;
+ margin:0px;
+ padding:0px;
+ height:90%;
+ }
+#rh-col{
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ width: 320px;
+ margin: 0px;
+ padding: 0px;
+ height: 90%;
+ }
+#hdr{
+ margin:0;
+ padding:0;
+ position:absolute;
+ top:0px;
+ left:0px;
+ width:100%;
+} 
+
+#c-col{
+ position: relative;
+ /*margin: 0px 320px 0px 180px;*/
+ margin: 0px 0px 0px 0px;
+ padding: 0px;
+ height:90%;
+ }

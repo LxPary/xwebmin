@@ -1,0 +1,71 @@
+/* layout */
+body{ 
+ font-family:arial, sans-serif;
+ /*background:#396bc6 url(/ui-lib/themes/csense/images/bg.jpg) repeat-x;*/
+ background:#396bc6;
+ font-size:12px;
+ overflow:hidden;
+ }
+/*
+#lh-col{  }
+#rh-col{  }
+#c-col{  }
+*/
+#hdr{ background:url(/ui-lib/themes/csense/images/tm-bg.gif) repeat-x }
+
+/* menu */
+#top-menu{ float:left }
+#top-start { width:46px;float:left;display:inline }
+#top-search { float:right }
+#top-search div.time { padding:0px;border:1px red solid}
+
+#sys-search { float:left;text-align:right;width:100% }
+#sys-search div { background:url(/ui-lib/themes/csense/images/full-search-center.gif) repeat-x }
+#sys-search div.left { float:left }
+
+#sys-search div.left img { vertical-align:top }
+#sys-search div.left input { vertical-align:bottom;border:0;background:transparent;width:141px;height:25; }
+/*
+#start-bar{  }
+#menu-pane{  }
+#menu-status{  }
+*/
+.sys-menu{ font-size:13px; }
+.sys-menu ul li a { color:black  }
+.sys-menu ul li:hover a { color:#ffffff; background:#396bc6 url(/ui-lib/themes/csense/images/tm-over.gif) repeat-x; }
+.sys-menu ul li:hover ul li a { background:white;color:black }
+.sys-menu ul li ul li:hover a { background:#799fd4;color:white }
+.sys-menu ul li ul li:hover ul li a { background:white;color:black }
+.sys-menu ul li ul li ul li a:hover { background:#799fd4;color:white }
+
+.win-menu{ font-size:12px; }
+.win-menu ul li a { color:black }
+.win-menu ul li a:hover { background:#799fd4;color:white }
+
+/* window 
+.dhtmlwindow{  }
+*/
+.drag-handle{ 
+ font: 13px/21px 'Lucida Grande', Arial, sans-serif;
+ height: 22px;
+ background:url(/ui-lib/themes/csense/images/window_bg_top.png) repeat-x;
+}
+.drag-contentarea{ 
+/* -moz-opacity:0.6;
+ opacity:0.6;
+ filter: Alpha(Opacity=60);*/
+}
+
+.drag-statusarea{ }
+
+/*label*/
+.win-label { height:22px }
+.win-label div { background:url(/ui-lib/themes/csense/images/window_bg_top_gray.png) repeat-x; }
+.win-label div.selected { background:url(/ui-lib/themes/csense/images/window_bg_top.png) repeat-x; }
+.win-label div a {}
+/* relative between layout and menu and window*/
+#hdr,.sys-menu ul li a,.win-menu ul li a { height:22px; }
+.sys-menu ul li:hover ul { top:22px; }
+
+#c-col,#lh-col { padding-top:25px; }
+#rh-col { padding-top:22px; }

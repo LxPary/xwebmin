@@ -1,0 +1,83 @@
+.dhtmlwindow{
+ position: absolute;
+ visibility: hidden;
+ border-left:1px #424d5f solid;
+ border-right:1px #424d5f solid;
+ border-bottom:1px #424d5f solid;
+ background:#ffffff;
+}
+.drag-handle{ /*CSS for Drag Handle*/
+ cursor:move;
+ overflow:hidden;
+ width:auto;
+}
+.drag-pane{width:99%}
+.drag-handle .drag-controls{ /*CSS for controls (min, close etc) within Drag Handle*/
+ position: absolute;
+right: 1px;
+top: 2px;
+cursor: pointer;
+}
+.drag-contentarea{ /*CSS for Content Display Area div*/
+ height: 150px;
+ padding: 4px;
+ overflow: auto;
+}
+div.drag-contentarea iframe { margin:0; padding:0; width:100%; height: 100% }
+
+.drag-statusarea{ /*CSS for Status Bar div (includes resizearea)*/
+ height: 25px; /*height of resize image*/
+}
+.drag-buttons {
+ width:95%;
+ float:left;
+ text-align:right;
+}
+.drag-resizearea{ /*CSS for Resize Area itself*/
+ float: right;
+ width: 13px; /*width of resize image*/
+ height: 25px; /*height of resize image*/
+ cursor: nw-resize;
+ font-size: 0;
+ background: transparent url(/ui-lib/window/images/resize.gif) bottom right no-repeat;
+}
+
+/* path nav*/
+.window-nav {width:100%;padding-top:5px;padding-bottom:5px;background:#f6f6f6 }
+.window-nav div{ position:relative;float:left;display:block;height:24px; }
+.window-nav-left{ width:7%; text-align:right; }
+.window-nav-right{ width:7%; }
+.window-nav-right img{ border:0px;cursor:pointer;cursor:hand }
+
+.window-nav-center{ 
+ position:relative;
+ background:url(/ui-lib/window/images/pathcenter.png) repeat-x;
+ text-align:left;
+ /*margin:0px 100px 0px 100px;*/
+ width:80%;
+}
+.window-nav-center input{ border:0px;background:transparent;width:90%; }
+
+.win-menu { height:25px;clear:both }
+.win-menu ul { padding:0; margin:0; list-style-type: none; }
+.win-menu ul li { position:relative;float:left;padding-left:3px }
+.win-menu ul li a { display:block; text-decoration:none;width:80px;border:1px #b7cce8 solid }
+.win-menu ul li a span { }
+.win-menu ul li ul { display: none; }
+.win-menu-title { height:23px;width:100%;text-align:center;border-bottom:2px #dadada solid }
+
+/* label */
+.window-label {}
+.window-label div { float:left;position:relative;width:100px;text-align:center;margin-right:2px; }
+.window-label div a {width:100%;height:100%;text-decoration:none; }
+.window-label div.selected { }
+
+/**/
+.window-menu { width:100%;text-align:center;clear:both }
+.window-main { width:100%;padding:0px }
+
+.window-tip { width:100%;height:23px;display:block }
+.window-tip div { position:relative;float:left }
+.window-tip div.message { text-align:center;width:70% }
+.window-tip div.undo { width:30% }
+
